@@ -3,7 +3,7 @@ const mongoose=require("mongoose");
 const connectDb=async()=>{
   try {
     const connect=await mongoose.connect(process.env.CONNECTION_STRING);
-    console.log("dtaabse connected",connect.connection.host,connect.connection.name);
+    console.log("databse connected to",connect.connection.host,connect.connection.name);
     
   } catch (error) {
     console.log(error);
